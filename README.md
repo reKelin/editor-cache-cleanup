@@ -135,7 +135,8 @@ python -m unittest discover -s tests -v
 ```
 
 测试只使用临时目录，覆盖平台路径、预览、删除边界、保留用户数据、链接与失败处理。
-GitHub Actions 配置了三种系统与 Python 3.9 / 3.12 / 3.14 的矩阵；配置存在不代表已通过远端验证。
+首次公开提交的 GitHub Actions 在三种系统与 Python 3.9 / 3.12 / 3.14 的矩阵中
+[全部通过](https://github.com/reKelin/editor-cache-cleanup/actions/runs/36313957346)。
 本地验证环境与结果见 [VALIDATION.md](VALIDATION.md)。
 提交兼容性问题时，请附操作系统、Python / 编辑器版本、安装方式及脱敏错误信息。
 新增清理目录必须说明其用途，并增加保留用户数据的测试。不要提交真实用户数据、令牌或日志中的凭据。

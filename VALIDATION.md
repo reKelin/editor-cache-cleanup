@@ -11,7 +11,9 @@
 - `python -m pip wheel . --no-deps --no-build-isolation --wheel-dir dist`：构建成功。
 - 在独立 `.venv` 中从本地 wheel 离线安装成功；`editor-cleanup --version` 输出 `0.1.0`。
 - 本机 Windows 进程枚举调用成功；测试覆盖运行中编辑器拦截和枚举失败时停止清理。
-- GitHub Actions 三平台、三个 Python 版本的矩阵已配置，尚未在远端执行。
+- 首次公开提交 `ad832b8` 的 GitHub Actions 矩阵在 Windows、macOS、Linux 与
+  Python 3.9 / 3.12 / 3.14 的 9 个组合中全部通过：
+  https://github.com/reKelin/editor-cache-cleanup/actions/runs/36313957346
 
 所有删除与恢复测试均针对自动创建的临时目录，未对真实编辑器数据执行清理。
 测试覆盖默认预览、选择性删除、用户数据保留、缺失目录、越界目标、部分失败、
